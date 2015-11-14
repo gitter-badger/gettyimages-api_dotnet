@@ -1,4 +1,6 @@
 # Getty Images API SDK - .NET
+
+[![Join the chat at https://gitter.im/mapitman/gettyimages-api_dotnet](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mapitman/gettyimages-api_dotnet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build status](https://ci.appveyor.com/api/projects/status/8v9ofg4453llrwgg/branch/master?svg=true)](https://ci.appveyor.com/project/mapitman/gettyimages-api-dotnet/branch/master)
 ## Introduction
 This SDK makes using the Getty Images [API](http://developers.gettyimages.com) easy. It handles credential management, makes HTTP requests and is written with a fluent style in mind. The [API Documentation](https://github.com/gettyimages/gettyimages-api) is located on Github.
