@@ -1,5 +1,7 @@
 # Getty Images API SDK - .NET
-[![Build status](https://ci.appveyor.com/api/projects/status/8v9ofg4453llrwgg/branch/master?svg=true)](https://ci.appveyor.com/project/mapitman/gettyimages-api-dotnet/branch/master)
+
+[![Join the chat at https://gitter.im/gettyimages/gettyimages-api_dotnet](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gettyimages/gettyimages-api_dotnet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build status](https://ci.appveyor.com/api/projects/status/yqy480k37aaokumr/branch/master?svg=true)](https://ci.appveyor.com/project/GettyImages/gettyimages-api-dotnet/branch/master)
 ## Introduction
 This SDK makes using the Getty Images [API](http://developers.gettyimages.com) easy. It handles credential management, makes HTTP requests and is written with a fluent style in mind. The [API Documentation](https://github.com/gettyimages/gettyimages-api) is located on Github.
 
@@ -20,7 +22,7 @@ The SDK currently supports:
 The SDK supports async operations, however it can also be used synchonously, such as when running in a console application:
 
 ```csharp
-var client = ApiClient.GetApiClientSdkWithClientCredentials("my_api_key", "my_api_secret");
+var client = ApiClient.GetApiClientWithClientCredentials("my_api_key", "my_api_secret");
 var searchResult = client.Search()
     .Images()
     .Editorial()
@@ -61,8 +63,6 @@ Open a console window (Command Prompt, PowerShell or Bash) and issue the followi
 	git submodule update --init
 #### Build using Command Prompt or Powershell
 	.\build.cmd
-#### Build using Bash
-	./build.sh
 
 ### Opening the code in Visual Studio and running tests
 #### Setup environment variables
